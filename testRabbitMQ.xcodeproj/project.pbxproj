@@ -21,6 +21,18 @@
 		8CC4135619C00C6900AB18AB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CC4133819C00C6900AB18AB /* UIKit.framework */; };
 		8CC4135E19C00C6900AB18AB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8CC4135C19C00C6900AB18AB /* InfoPlist.strings */; };
 		8CC4136019C00C6900AB18AB /* testRabbitMQTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CC4135F19C00C6900AB18AB /* testRabbitMQTests.m */; };
+		8CC4182A19C0711A00AB18AB /* AMQPChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CC4181619C0711A00AB18AB /* AMQPChannel.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8CC4182B19C0711A00AB18AB /* AMQPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CC4181819C0711A00AB18AB /* AMQPConnection.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8CC4182C19C0711A00AB18AB /* AMQPConsumer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CC4181A19C0711A00AB18AB /* AMQPConsumer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8CC4182D19C0711A00AB18AB /* AMQPConsumerThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CC4181C19C0711A00AB18AB /* AMQPConsumerThread.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8CC4182E19C0711A00AB18AB /* AMQPExchange.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CC4181F19C0711A00AB18AB /* AMQPExchange.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8CC4182F19C0711A00AB18AB /* AMQPMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CC4182119C0711A00AB18AB /* AMQPMessage.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8CC4183019C0711A00AB18AB /* AMQPObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CC4182319C0711A00AB18AB /* AMQPObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8CC4183119C0711A00AB18AB /* AMQPQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CC4182519C0711A00AB18AB /* AMQPQueue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8CC4183219C0711A00AB18AB /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 8CC4182719C0711A00AB18AB /* LICENSE */; };
+		8CC4183319C0711A00AB18AB /* LICENSE.gpl in Resources */ = {isa = PBXBuildFile; fileRef = 8CC4182819C0711A00AB18AB /* LICENSE.gpl */; };
+		8CC4183419C0711A00AB18AB /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 8CC4182919C0711A00AB18AB /* README.md */; };
+		8CC4183D19C07BE800AB18AB /* librabbitmq.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CC4183A19C075CC00AB18AB /* librabbitmq.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +65,33 @@
 		8CC4135B19C00C6900AB18AB /* testRabbitMQTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "testRabbitMQTests-Info.plist"; sourceTree = "<group>"; };
 		8CC4135D19C00C6900AB18AB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8CC4135F19C00C6900AB18AB /* testRabbitMQTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testRabbitMQTests.m; sourceTree = "<group>"; };
+		8CC4148B19C01ED900AB18AB /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		8CC4181519C0711A00AB18AB /* AMQPChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMQPChannel.h; sourceTree = "<group>"; };
+		8CC4181619C0711A00AB18AB /* AMQPChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMQPChannel.m; sourceTree = "<group>"; };
+		8CC4181719C0711A00AB18AB /* AMQPConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMQPConnection.h; sourceTree = "<group>"; };
+		8CC4181819C0711A00AB18AB /* AMQPConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMQPConnection.m; sourceTree = "<group>"; };
+		8CC4181919C0711A00AB18AB /* AMQPConsumer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMQPConsumer.h; sourceTree = "<group>"; };
+		8CC4181A19C0711A00AB18AB /* AMQPConsumer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMQPConsumer.m; sourceTree = "<group>"; };
+		8CC4181B19C0711A00AB18AB /* AMQPConsumerThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMQPConsumerThread.h; sourceTree = "<group>"; };
+		8CC4181C19C0711A00AB18AB /* AMQPConsumerThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMQPConsumerThread.m; sourceTree = "<group>"; };
+		8CC4181D19C0711A00AB18AB /* AMQPConsumerThreadDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMQPConsumerThreadDelegate.h; sourceTree = "<group>"; };
+		8CC4181E19C0711A00AB18AB /* AMQPExchange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMQPExchange.h; sourceTree = "<group>"; };
+		8CC4181F19C0711A00AB18AB /* AMQPExchange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMQPExchange.m; sourceTree = "<group>"; };
+		8CC4182019C0711A00AB18AB /* AMQPMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMQPMessage.h; sourceTree = "<group>"; };
+		8CC4182119C0711A00AB18AB /* AMQPMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMQPMessage.m; sourceTree = "<group>"; };
+		8CC4182219C0711A00AB18AB /* AMQPObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMQPObject.h; sourceTree = "<group>"; };
+		8CC4182319C0711A00AB18AB /* AMQPObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMQPObject.m; sourceTree = "<group>"; };
+		8CC4182419C0711A00AB18AB /* AMQPQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMQPQueue.h; sourceTree = "<group>"; };
+		8CC4182519C0711A00AB18AB /* AMQPQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMQPQueue.m; sourceTree = "<group>"; };
+		8CC4182619C0711A00AB18AB /* AMQPWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMQPWrapper.h; sourceTree = "<group>"; };
+		8CC4182719C0711A00AB18AB /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		8CC4182819C0711A00AB18AB /* LICENSE.gpl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.gpl; sourceTree = "<group>"; };
+		8CC4182919C0711A00AB18AB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		8CC4183719C075CC00AB18AB /* amqp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = amqp.h; sourceTree = "<group>"; };
+		8CC4183819C075CC00AB18AB /* amqp_framing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = amqp_framing.h; sourceTree = "<group>"; };
+		8CC4183919C075CC00AB18AB /* amqp_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = amqp_private.h; sourceTree = "<group>"; };
+		8CC4183A19C075CC00AB18AB /* librabbitmq.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = librabbitmq.a; sourceTree = "<group>"; };
+		8CC4183B19C075CC00AB18AB /* socket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = socket.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CC4183D19C07BE800AB18AB /* librabbitmq.a in Frameworks */,
 				8CC4133719C00C6900AB18AB /* CoreGraphics.framework in Frameworks */,
 				8CC4133919C00C6900AB18AB /* UIKit.framework in Frameworks */,
 				8CC4133519C00C6900AB18AB /* Foundation.framework in Frameworks */,
@@ -82,6 +122,8 @@
 		8CC4132819C00C6900AB18AB = {
 			isa = PBXGroup;
 			children = (
+				8CC4183619C075CC00AB18AB /* rabbitmq-lib */,
+				8CC4181419C0711A00AB18AB /* librabbitmq-objc-master 2 */,
 				8CC4133A19C00C6900AB18AB /* testRabbitMQ */,
 				8CC4135919C00C6900AB18AB /* testRabbitMQTests */,
 				8CC4133319C00C6900AB18AB /* Frameworks */,
@@ -101,6 +143,7 @@
 		8CC4133319C00C6900AB18AB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8CC4148B19C01ED900AB18AB /* CoreFoundation.framework */,
 				8CC4133419C00C6900AB18AB /* Foundation.framework */,
 				8CC4133619C00C6900AB18AB /* CoreGraphics.framework */,
 				8CC4133819C00C6900AB18AB /* UIKit.framework */,
@@ -150,6 +193,46 @@
 				8CC4135C19C00C6900AB18AB /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8CC4181419C0711A00AB18AB /* librabbitmq-objc-master 2 */ = {
+			isa = PBXGroup;
+			children = (
+				8CC4181519C0711A00AB18AB /* AMQPChannel.h */,
+				8CC4181619C0711A00AB18AB /* AMQPChannel.m */,
+				8CC4181719C0711A00AB18AB /* AMQPConnection.h */,
+				8CC4181819C0711A00AB18AB /* AMQPConnection.m */,
+				8CC4181919C0711A00AB18AB /* AMQPConsumer.h */,
+				8CC4181A19C0711A00AB18AB /* AMQPConsumer.m */,
+				8CC4181B19C0711A00AB18AB /* AMQPConsumerThread.h */,
+				8CC4181C19C0711A00AB18AB /* AMQPConsumerThread.m */,
+				8CC4181D19C0711A00AB18AB /* AMQPConsumerThreadDelegate.h */,
+				8CC4181E19C0711A00AB18AB /* AMQPExchange.h */,
+				8CC4181F19C0711A00AB18AB /* AMQPExchange.m */,
+				8CC4182019C0711A00AB18AB /* AMQPMessage.h */,
+				8CC4182119C0711A00AB18AB /* AMQPMessage.m */,
+				8CC4182219C0711A00AB18AB /* AMQPObject.h */,
+				8CC4182319C0711A00AB18AB /* AMQPObject.m */,
+				8CC4182419C0711A00AB18AB /* AMQPQueue.h */,
+				8CC4182519C0711A00AB18AB /* AMQPQueue.m */,
+				8CC4182619C0711A00AB18AB /* AMQPWrapper.h */,
+				8CC4182719C0711A00AB18AB /* LICENSE */,
+				8CC4182819C0711A00AB18AB /* LICENSE.gpl */,
+				8CC4182919C0711A00AB18AB /* README.md */,
+			);
+			path = "librabbitmq-objc-master 2";
+			sourceTree = "<group>";
+		};
+		8CC4183619C075CC00AB18AB /* rabbitmq-lib */ = {
+			isa = PBXGroup;
+			children = (
+				8CC4183719C075CC00AB18AB /* amqp.h */,
+				8CC4183819C075CC00AB18AB /* amqp_framing.h */,
+				8CC4183919C075CC00AB18AB /* amqp_private.h */,
+				8CC4183A19C075CC00AB18AB /* librabbitmq.a */,
+				8CC4183B19C075CC00AB18AB /* socket.h */,
+			);
+			path = "rabbitmq-lib";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,9 +311,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CC4183419C0711A00AB18AB /* README.md in Resources */,
 				8CC4134D19C00C6900AB18AB /* Images.xcassets in Resources */,
 				8CC4133F19C00C6900AB18AB /* InfoPlist.strings in Resources */,
+				8CC4183219C0711A00AB18AB /* LICENSE in Resources */,
 				8CC4134819C00C6900AB18AB /* Main.storyboard in Resources */,
+				8CC4183319C0711A00AB18AB /* LICENSE.gpl in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,9 +335,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CC4182C19C0711A00AB18AB /* AMQPConsumer.m in Sources */,
+				8CC4182A19C0711A00AB18AB /* AMQPChannel.m in Sources */,
+				8CC4182B19C0711A00AB18AB /* AMQPConnection.m in Sources */,
+				8CC4182E19C0711A00AB18AB /* AMQPExchange.m in Sources */,
 				8CC4134B19C00C6900AB18AB /* ViewController.m in Sources */,
+				8CC4183119C0711A00AB18AB /* AMQPQueue.m in Sources */,
+				8CC4182F19C0711A00AB18AB /* AMQPMessage.m in Sources */,
 				8CC4134519C00C6900AB18AB /* AppDelegate.m in Sources */,
 				8CC4134119C00C6900AB18AB /* main.m in Sources */,
+				8CC4182D19C0711A00AB18AB /* AMQPConsumerThread.m in Sources */,
+				8CC4183019C0711A00AB18AB /* AMQPObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,7 +475,13 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "testRabbitMQ/testRabbitMQ-Prefix.pch";
 				INFOPLIST_FILE = "testRabbitMQ/testRabbitMQ-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/rabbitmq-lib",
+				);
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -394,7 +494,13 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "testRabbitMQ/testRabbitMQ-Prefix.pch";
 				INFOPLIST_FILE = "testRabbitMQ/testRabbitMQ-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/rabbitmq-lib",
+				);
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -460,6 +566,7 @@
 				8CC4136519C00C6900AB18AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8CC4136619C00C6900AB18AB /* Build configuration list for PBXNativeTarget "testRabbitMQTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +575,7 @@
 				8CC4136819C00C6900AB18AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
