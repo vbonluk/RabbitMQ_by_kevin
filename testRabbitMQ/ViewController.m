@@ -27,8 +27,8 @@
         
         //连接
         _conn = [[AMQPConnection alloc]init];
-        [_conn connectToHost:@"zerogame.wicp.net" onPort:5672];
-        [_conn loginAsUser:@"zerogame" withPasswort:@"zerogame2014" onVHost:@"zerogame"];
+        [_conn connectToHost:@"" onPort:5672];
+        [_conn loginAsUser:@"" withPasswort:@"" onVHost:@""];
         
         //设置频道
         _channel =[_conn openChannel];
